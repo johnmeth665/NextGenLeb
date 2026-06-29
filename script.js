@@ -8,6 +8,21 @@
 const cur  = document.getElementById('cur');
 const cur2 = document.getElementById('cur2');
 
+
+if(cur && cur2){
+
+document.addEventListener('mousemove', e => {
+
+let mouseX=e.clientX;
+let mouseY=e.clientY;
+
+cur.style.transform =
+`translate(${mouseX-5}px,${mouseY-5}px)`;
+
+});
+
+}
+
 let mouseX = 0, mouseY = 0;
 let trailX = 0, trailY = 0;
 
@@ -38,16 +53,31 @@ document.querySelectorAll('button, a, .svc-card, .why-card, .port-card, .tech-ca
 /* ------------------------------------------------------------
    SCROLL REVEAL
    ------------------------------------------------------------ */
-const revealObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('v');
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1 });
+const revealObserver = new IntersectionObserver(
+(entries)=>{
 
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("v");
+
+}
+
+});
+
+},
+{
+threshold:0,
+rootMargin:"0px 0px -100px 0px"
+});
+
+
+document.querySelectorAll(".reveal").forEach((el)=>{
+
+revealObserver.observe(el);
+
+});
 
 /* ------------------------------------------------------------
    ANIMATED STAT COUNTERS
