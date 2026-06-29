@@ -1,1 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextGenLeb — Digital Transformation Partner</title>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div id="cur"></div>
+<div id="cur2"></div>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav>
+  <div class="logo">Next<span>Gen</span>Leb</div>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#process">Process</a>
+    <a href="#tech">Tech</a>
+    <a href="#portfolio">Work</a>
+  </div>
+  <button class="nav-btn">Start Project →</button>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-inner">
+
+    <!-- Left: Copy -->
+    <div>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        2025 · AI + Digital Transformation
+      </div>
+
+      <h1 class="hero-h1">
+        Building Digital<br>
+        <span class="g">Experiences</span> That Help<br>
+        Businesses Scale
+      </h1>
+
+      <p class="hero-p">
+        NextGenLeb combines technology, creativity, and digital strategy to create
+        powerful websites, mobile applications, AI solutions, and marketing strategies
+        that drive real growth.
+      </p>
+
+      <div class="hero-ctas">
+        <button class="btn-p">Start Your Digital Growth Journey →</button>
+        <button class="btn-s">Explore Our Solutions</button>
+      </div>
+
+      <div class="hero-trust">
+        <div class="trust-avatars">
+          <div class="trust-av" style="background:linear-gradient(135deg,#2563EB,#7C3AED)">A</div>
+          <div class="trust-av" style="background:linear-gradient(135deg,#06B6D4,#2563EB)">M</div>
+          <div class="trust-av" style="background:linear-gradient(135deg,#7C3AED,#EC4899)">R</div>
+          <div class="trust-av" style="background:linear-gradient(135deg,#22C55E,#06B6D4)">S</div>
+          <div class="trust-av" style="background:linear-gradient(135deg,#F59E0B,#EF4444)">K</div>
+        </div>
+        <div class="trust-txt">Trusted by <strong>150+ growing businesses</strong> globally</div>
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="hero-visual">
+      <!-- Orbit rings -->
+      <div class="orbit-ring" style="width:480px;height:480px;top:50%;left:50%;transform:translate(-50%,-50%);animation:os 22s linear infinite"></div>
+      <div class="orbit-ring" style="width:360px;height:360px;top:50%;left:50%;transform:translate(-50%,-50%);animation:os 16s linear infinite reverse"></div>
+      <div class="orbit-ring" style="width:240px;height:240px;top:50%;left:50%;transform:translate(-50%,-50%);animation:os 12s linear infinite"></div>
+
+      <!-- Center orb -->
+      <div class="center-orb">NextGen<br>Leb</div>
+
+      <!-- Floating stat cards -->
+      <div class="float-card" style="top:50px;left:20px;animation-delay:.5s">
+        <div class="fc-icon">📈</div>
+        <div class="fc-label">SEO Growth</div>
+        <div class="fc-val">+342%</div>
+      </div>
+      <div class="float-card" style="top:80px;right:10px;animation-delay:1.5s">
+        <div class="fc-icon">🤖</div>
+        <div class="fc-label">AI Projects</div>
+        <div class="fc-val">48 Live</div>
+      </div>
+      <div class="float-card" style="bottom:100px;left:10px;animation-delay:2.5s">
+        <div class="fc-icon">📱</div>
+        <div class="fc-label">Apps Built</div>
+        <div class="fc-val">120+</div>
+      </div>
+      <div class="float-card" style="bottom:70px;right:15px;animation-delay:.8s">
+        <div class="fc-icon">⚡</div>
+        <div class="fc-label">Avg Launch</div>
+        <div class="fc-val">8 Weeks</div>
+      </div>
+
+      <!-- Orbiting service icons -->
+      <div style="position:absolute;width:480px;height:480px;top:50%;left:50%;transform:translate(-50%,-50%);animation:os 22s linear infinite">
+        <div class="orb-icon" style="top:-22px;left:50%;transform:translateX(-50%)">🌐</div>
+        <div class="orb-icon" style="bottom:-22px;left:50%;transform:translateX(-50%)">🧠</div>
+        <div class="orb-icon" style="left:-22px;top:50%;transform:translateY(-50%)">📱</div>
+        <div class="orb-icon" style="right:-22px;top:50%;transform:translateY(-50%)">📊</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS BAR
+     ============================================================ -->
+<div class="stats">
+  <div class="stats-inner">
+    <div><div class="stat-n" data-t="150">0</div><div class="stat-l">Clients Served</div></div>
+    <div><div class="stat-n" data-t="120">0</div><div class="stat-l">Apps Delivered</div></div>
+    <div><div class="stat-n" data-t="8">0</div><div class="stat-l">Years Experience</div></div>
+    <div><div class="stat-n" data-t="98">0</div><div class="stat-l">% Client Retention</div></div>
+    <div><div class="stat-n" data-t="40">0</div><div class="stat-l">AI Solutions Built</div></div>
+  </div>
+</div>
+
+<!-- ============================================================
+     BRAND INTRO
+     ============================================================ -->
+<section class="intro-sec" id="why">
+  <div class="sec-inner">
+    <div class="eyebrow reveal">Who We Are</div>
+    <h2 class="sec-title reveal">A Technology &amp; Digital Growth<br>Partner Built for the Modern Era</h2>
+
+    <div class="intro-grid reveal">
+      <div>
+        <p style="font-size:16.5px;line-height:1.8;color:rgba(255,255,255,.55);margin-bottom:32px">
+          We're not just a service provider — we're your end-to-end digital transformation team.
+          From day one, we align with your business goals and stay with you through every stage of growth.
+        </p>
+        <div class="intro-feature">
+          <div class="intro-fi">🎯</div>
+          <div><div class="intro-fn">Technology Expertise</div><div class="intro-fd">Full-stack development across web, mobile, AI, and cloud — built to enterprise standards.</div></div>
+        </div>
+        <div class="intro-feature">
+          <div class="intro-fi">📊</div>
+          <div><div class="intro-fn">Digital Marketing Power</div><div class="intro-fd">SEO, social, paid media — growth strategies driven by data, not guesswork.</div></div>
+        </div>
+        <div class="intro-feature">
+          <div class="intro-fi">🤖</div>
+          <div><div class="intro-fn">AI Innovation First</div><div class="intro-fd">Custom AI models, automation engines, and intelligent chatbots that reduce cost and scale operations.</div></div>
+        </div>
+        <div class="intro-feature">
+          <div class="intro-fi">📈</div>
+          <div><div class="intro-fn">Business-Focused Delivery</div><div class="intro-fd">Every solution we build is tied to a measurable business outcome, not just a feature checklist.</div></div>
+        </div>
+      </div>
+
+      <div class="journey">
+        <div class="j-step"><div class="j-dot">💡</div><div><div class="j-name">Idea &amp; Discovery</div><div class="j-d">Deep-dive into your business, market, and goals</div></div></div>
+        <div class="j-step"><div class="j-dot">🗺️</div><div><div class="j-name">Strategy</div><div class="j-d">Roadmap, architecture, and growth plan</div></div></div>
+        <div class="j-step"><div class="j-dot">🎨</div><div><div class="j-name">Design</div><div class="j-d">Premium UI/UX that converts and delights</div></div></div>
+        <div class="j-step"><div class="j-dot">⚙️</div><div><div class="j-name">Development</div><div class="j-d">Agile sprints, daily updates, rapid delivery</div></div></div>
+        <div class="j-step"><div class="j-dot">🚀</div><div><div class="j-name">Launch &amp; Growth</div><div class="j-d">Go live, market, optimize, and scale</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<section id="services" class="services-sec">
+  <div class="sec-inner">
+    <div class="eyebrow reveal">Our Services</div>
+    <h2 class="sec-title reveal">A Complete Digital Universe<br>of Solutions</h2>
+    <p class="sec-desc reveal">Every service you need to build, grow, and dominate your market — under one roof.</p>
+
+    <!-- Digital Growth -->
+    <div class="cat-label reveal">🌱 Digital Growth</div>
+    <div class="services-grid reveal">
+      <div class="svc-card">
+        <div class="svc-icon" style="background:rgba(34,197,94,.1)">🔍</div>
+        <div class="svc-name">SEO Services</div>
+        <div class="svc-d">Technical SEO, content strategy, and authority building that ranks you on page one and keeps you there.</div>
+        <div class="svc-arr">↗</div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon" style="background:rgba(251,191,36,.1)">📣</div>
+        <div class="svc-name">Digital Marketing</div>
+        <div class="svc-d">Performance-driven paid and organic campaigns that generate leads and reduce customer acquisition cost.</div>
+        <div class="svc-arr">↗</div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon" style="background:rgba(236,72,153,.1)">📲</div>
+        <div class="svc-name">Social Media Marketing</div>
+        <div class="svc-d">Brand storytelling, community building, and conversion-focused social strategies across every channel.</div>
+        <div class="svc-arr">↗</div>
+      </div>
+    </div>
+
+    <!-- Technology Development -->
+    <div class="cat-label reveal">⚙️ Technology Development</div>
+    <div class="services-grid reveal">
+      <div class="svc-card">
+        <div class="svc-icon" style="background:rgba(37,99,235,.1)">🌐</div>
+        <div class="svc-name">Website Development</div>
+        <div class="svc-d">Fast, scalable web platforms — from landing pages to complex SaaS products — built to convert.</div>
+        <div class="svc-arr">↗</div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon" style="background:rgba(6,182,212,.1)">📱</div>
+        <div class="svc-name">Mobile App Development</div>
+        <div class="svc-d">Native and cross-platform iOS &amp; Android apps with exceptional UX, built to delight millions of users.</div>
+        <div class="svc-arr">↗</div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon" style="background:rgba(249,115,22,.1)">🛒</div>
+        <div class="svc-name">Ecommerce App Development</div>
+        <div class="svc-d">Scalable ecommerce platforms with smart catalogs, payment gateways, and growth analytics built in.</div>
+        <div class="svc-arr">↗</div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon" style="background:rgba(124,58,237,.1)">⚡</div>
+        <div class="svc-name">On-Demand App Development</div>
+        <div class="svc-d">Uber-style marketplace platforms with real-time tracking, AI dispatch, and multi-sided architectures.</div>
+        <div class="svc-arr">↗</div>
+      </div>
+    </div>
+
+    <!-- AI Innovation -->
+    <div class="cat-label reveal">🤖 AI Innovation</div>
+    <div class="services-grid reveal">
+      <div class="svc-card">
+        <div class="svc-icon" style="background:rgba(124,58,237,.12)">🧠</div>
+        <div class="svc-name">Custom AI Development</div>
+        <div class="svc-d">Bespoke ML models, LLM integrations, and AI-powered products trained on your business data.</div>
+        <div class="svc-arr">↗</div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon" style="background:rgba(37,99,235,.12)">🔧</div>
+        <div class="svc-name">AI Automation</div>
+        <div class="svc-d">Intelligent workflow automation that eliminates repetitive tasks and scales your operations without adding headcount.</div>
+        <div class="svc-arr">↗</div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon" style="background:rgba(6,182,212,.12)">💬</div>
+        <div class="svc-name">AI Chatbot Development</div>
+        <div class="svc-d">Conversational AI agents that handle support, sales, and onboarding — 24/7, across every channel.</div>
+        <div class="svc-arr">↗</div>
+      </div>
+    </div>
+
+    <!-- Specialized Platforms -->
+    <div class="cat-label reveal">🎯 Specialized Platforms</div>
+    <div class="services-grid reveal">
+      <div class="svc-card">
+        <div class="svc-icon" style="background:rgba(251,191,36,.1)">🔯</div>
+        <div class="svc-name">Astrology App Development</div>
+        <div class="svc-d">Feature-rich astrology platforms with live consultations, horoscope engines, kundli matching, and subscription models.</div>
+        <div class="svc-arr">↗</div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon" style="background:rgba(239,68,68,.1)">🔞</div>
+        <div class="svc-name">Adult Web Development</div>
+        <div class="svc-d">Compliant, secure adult content platforms with age verification, subscription billing, and creator monetization tools.</div>
+        <div class="svc-arr">↗</div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon" style="background:rgba(168,85,247,.1)">🤖</div>
+        <div class="svc-name">NSFW Chatbot Development</div>
+        <div class="svc-d">Custom AI companions and adult chatbots with persona customization, content filtering, and platform compliance.</div>
+        <div class="svc-arr">↗</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY NEXTGENLEB
+     ============================================================ -->
+<section class="why-sec">
+  <div class="sec-inner">
+    <div class="eyebrow reveal">Why NextGenLeb</div>
+    <h2 class="sec-title reveal">Technology, Strategy, and<br>Innovation Under One Roof</h2>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-num">01 ·</div>
+        <div class="why-icon">🔄</div>
+        <div class="why-title">End-to-End Solutions</div>
+        <div class="why-desc">From initial concept and market research through design, development, and post-launch growth — we handle every stage so you don't have to juggle multiple vendors.</div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">02 ·</div>
+        <div class="why-icon">📡</div>
+        <div class="why-title">Scalable Technology</div>
+        <div class="why-desc">Every platform we build is architected for scale — cloud-native, containerized, and optimized to serve millions of users without breaking a sweat.</div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">03 ·</div>
+        <div class="why-icon">🧠</div>
+        <div class="why-title">AI-Driven Approach</div>
+        <div class="why-desc">AI isn't an add-on for us — it's the foundation. We embed intelligence into every product layer: matching, automation, personalization, and support.</div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">04 ·</div>
+        <div class="why-icon">🎯</div>
+        <div class="why-title">Business-Focused Development</div>
+        <div class="why-desc">We measure success the same way you do: revenue, retention, and growth. Every technical decision is tied to a business metric that matters.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     INDUSTRIES
+     ============================================================ -->
+<section class="ind-sec">
+  <div class="ind-inner">
+    <div class="eyebrow reveal">Industries We Serve</div>
+    <h2 class="sec-title reveal">Building Digital Solutions<br>Across Every Industry</h2>
+  </div>
+  <div style="overflow:hidden;margin-top:50px">
+    <div class="ind-track">
+      <div class="ind-card"><div class="ind-ico">🛒</div><div class="ind-name">Ecommerce</div><div class="ind-d">Marketplaces &amp; retail</div></div>
+      <div class="ind-card"><div class="ind-ico">🏥</div><div class="ind-name">Healthcare</div><div class="ind-d">Telemedicine &amp; wellness</div></div>
+      <div class="ind-card"><div class="ind-ico">🎬</div><div class="ind-name">Entertainment</div><div class="ind-d">Streaming &amp; content</div></div>
+      <div class="ind-card"><div class="ind-ico">🏪</div><div class="ind-name">Marketplace</div><div class="ind-d">Two-sided platforms</div></div>
+      <div class="ind-card"><div class="ind-ico">📚</div><div class="ind-name">Education</div><div class="ind-d">EdTech &amp; eLearning</div></div>
+      <div class="ind-card"><div class="ind-ico">🤖</div><div class="ind-name">AI Platforms</div><div class="ind-d">SaaS &amp; AI products</div></div>
+      <div class="ind-card"><div class="ind-ico">🍔</div><div class="ind-name">Food Delivery</div><div class="ind-d">On-demand ordering</div></div>
+      <div class="ind-card"><div class="ind-ico">🚗</div><div class="ind-name">Transportation</div><div class="ind-d">Mobility &amp; logistics</div></div>
+      <div class="ind-card"><div class="ind-ico">💰</div><div class="ind-name">FinTech</div><div class="ind-d">Payments &amp; banking</div></div>
+      <div class="ind-card"><div class="ind-ico">🏋️</div><div class="ind-name">Fitness</div><div class="ind-d">Health &amp; wellness apps</div></div>
+      <!-- Duplicate set for seamless infinite scroll -->
+      <div class="ind-card"><div class="ind-ico">🛒</div><div class="ind-name">Ecommerce</div><div class="ind-d">Marketplaces &amp; retail</div></div>
+      <div class="ind-card"><div class="ind-ico">🏥</div><div class="ind-name">Healthcare</div><div class="ind-d">Telemedicine &amp; wellness</div></div>
+      <div class="ind-card"><div class="ind-ico">🎬</div><div class="ind-name">Entertainment</div><div class="ind-d">Streaming &amp; content</div></div>
+      <div class="ind-card"><div class="ind-ico">🏪</div><div class="ind-name">Marketplace</div><div class="ind-d">Two-sided platforms</div></div>
+      <div class="ind-card"><div class="ind-ico">📚</div><div class="ind-name">Education</div><div class="ind-d">EdTech &amp; eLearning</div></div>
+      <div class="ind-card"><div class="ind-ico">🤖</div><div class="ind-name">AI Platforms</div><div class="ind-d">SaaS &amp; AI products</div></div>
+      <div class="ind-card"><div class="ind-ico">🍔</div><div class="ind-name">Food Delivery</div><div class="ind-d">On-demand ordering</div></div>
+      <div class="ind-card"><div class="ind-ico">🚗</div><div class="ind-name">Transportation</div><div class="ind-d">Mobility &amp; logistics</div></div>
+      <div class="ind-card"><div class="ind-ico">💰</div><div class="ind-name">FinTech</div><div class="ind-d">Payments &amp; banking</div></div>
+      <div class="ind-card"><div class="ind-ico">🏋️</div><div class="ind-name">Fitness</div><div class="ind-d">Health &amp; wellness apps</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESS
+     ============================================================ -->
+<section id="process" class="proc-sec">
+  <div class="sec-inner">
+    <div class="eyebrow reveal">Our Process</div>
+    <h2 class="sec-title reveal">From Idea to Market<br>in 7 Proven Stages</h2>
+    <div class="proc-track reveal">
+      <div class="proc-step"><div class="proc-num">01</div><div class="proc-name">Discovery</div><div class="proc-d">Goals, market, tech scope</div></div>
+      <div class="proc-step"><div class="proc-num">02</div><div class="proc-name">Strategy</div><div class="proc-d">Roadmap &amp; architecture</div></div>
+      <div class="proc-step"><div class="proc-num">03</div><div class="proc-name">UI/UX Design</div><div class="proc-d">Wireframes &amp; prototypes</div></div>
+      <div class="proc-step"><div class="proc-num">04</div><div class="proc-name">Development</div><div class="proc-d">Agile sprint delivery</div></div>
+      <div class="proc-step"><div class="proc-num">05</div><div class="proc-name">Testing</div><div class="proc-d">QA, load &amp; security</div></div>
+      <div class="proc-step"><div class="proc-num">06</div><div class="proc-name">Launch</div><div class="proc-d">Phased rollout &amp; monitoring</div></div>
+      <div class="proc-step"><div class="proc-num">07</div><div class="proc-name">Growth</div><div class="proc-d">SEO, marketing &amp; scale</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TECHNOLOGY STACK
+     ============================================================ -->
+<section id="tech" class="tech-sec">
+  <div class="sec-inner">
+    <div class="eyebrow reveal">Technology Stack</div>
+    <h2 class="sec-title reveal">Enterprise Technology,<br>Carefully Chosen</h2>
+    <p class="sec-desc reveal">We use the most powerful, battle-tested tools — nothing trendy for the sake of it.</p>
+    <div class="tech-grid reveal">
+      <div class="tech-card"><div class="tech-logo">⚛️</div><div class="tech-name">React</div><div class="tech-cat">Frontend</div></div>
+      <div class="tech-card"><div class="tech-logo">🐦</div><div class="tech-name">Flutter</div><div class="tech-cat">Cross-platform</div></div>
+      <div class="tech-card"><div class="tech-logo">📱</div><div class="tech-name">React Native</div><div class="tech-cat">Mobile</div></div>
+      <div class="tech-card"><div class="tech-logo">🟩</div><div class="tech-name">Node.js</div><div class="tech-cat">Backend</div></div>
+      <div class="tech-card"><div class="tech-logo">🐍</div><div class="tech-name">Python</div><div class="tech-cat">AI / ML</div></div>
+      <div class="tech-card"><div class="tech-logo">🧠</div><div class="tech-name">Machine Learning</div><div class="tech-cat">AI Layer</div></div>
+      <div class="tech-card"><div class="tech-logo">✨</div><div class="tech-name">Generative AI</div><div class="tech-cat">LLM / GPT</div></div>
+      <div class="tech-card"><div class="tech-logo">☁️</div><div class="tech-name">AWS</div><div class="tech-cat">Cloud</div></div>
+      <div class="tech-card"><div class="tech-logo">🍃</div><div class="tech-name">MongoDB</div><div class="tech-cat">Database</div></div>
+      <div class="tech-card"><div class="tech-logo">🐘</div><div class="tech-name">PostgreSQL</div><div class="tech-cat">Database</div></div>
+      <div class="tech-card"><div class="tech-logo">🔴</div><div class="tech-name">Redis</div><div class="tech-cat">Caching</div></div>
+      <div class="tech-card"><div class="tech-logo">🐋</div><div class="tech-name">Docker</div><div class="tech-cat">DevOps</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PORTFOLIO
+     ============================================================ -->
+<section id="portfolio" class="port-sec">
+  <div class="sec-inner">
+    <div class="eyebrow reveal">Featured Work</div>
+    <h2 class="sec-title reveal">Solutions We've Built<br>for Real Businesses</h2>
+
+    <div class="port-tabs reveal">
+      <button class="port-tab active" onclick="portTab(this,'all')">All Work</button>
+      <button class="port-tab" onclick="portTab(this,'apps')">Mobile Apps</button>
+      <button class="port-tab" onclick="portTab(this,'ai')">AI Solutions</button>
+      <button class="port-tab" onclick="portTab(this,'web')">Web Platforms</button>
+    </div>
+
+    <div class="port-grid reveal">
+      <div class="port-card">
+        <div class="port-thumb" style="background:linear-gradient(135deg,rgba(37,99,235,.2),rgba(124,58,237,.15))">🚖</div>
+        <div class="port-info">
+          <div class="port-title">RideSwift — On-Demand Taxi Platform</div>
+          <div class="port-type">React Native · Node.js · AI Dispatch</div>
+          <div class="port-tag">Mobile App</div>
+        </div>
+      </div>
+      <div class="port-card">
+        <div class="port-thumb" style="background:linear-gradient(135deg,rgba(6,182,212,.2),rgba(37,99,235,.15))">🧠</div>
+        <div class="port-info">
+          <div class="port-title">AuraBot — AI Customer Support Agent</div>
+          <div class="port-type">Python · GPT-4 · RAG Pipeline</div>
+          <div class="port-tag">AI Solution</div>
+        </div>
+      </div>
+      <div class="port-card">
+        <div class="port-thumb" style="background:linear-gradient(135deg,rgba(251,191,36,.15),rgba(239,68,68,.1))">🔯</div>
+        <div class="port-info">
+          <div class="port-title">AstroVeda — Astrology Consultation App</div>
+          <div class="port-type">Flutter · Firebase · Subscription Billing</div>
+          <div class="port-tag">Mobile App</div>
+        </div>
+      </div>
+      <div class="port-card">
+        <div class="port-thumb" style="background:linear-gradient(135deg,rgba(34,197,94,.15),rgba(6,182,212,.1))">🛒</div>
+        <div class="port-info">
+          <div class="port-title">MarketOS — B2B Ecommerce Platform</div>
+          <div class="port-type">React · Node.js · Stripe · AWS</div>
+          <div class="port-tag">Web Platform</div>
+        </div>
+      </div>
+      <div class="port-card">
+        <div class="port-thumb" style="background:linear-gradient(135deg,rgba(236,72,153,.15),rgba(124,58,237,.1))">📊</div>
+        <div class="port-info">
+          <div class="port-title">GrowthPilot — AI SEO &amp; Marketing Suite</div>
+          <div class="port-type">Python ML · React Dashboard · GPT</div>
+          <div class="port-tag">AI Solution</div>
+        </div>
+      </div>
+      <div class="port-card">
+        <div class="port-thumb" style="background:linear-gradient(135deg,rgba(124,58,237,.2),rgba(37,99,235,.1))">🏥</div>
+        <div class="port-info">
+          <div class="port-title">CareConnect — Telemedicine Platform</div>
+          <div class="port-type">React Native · WebRTC · HIPAA Compliant</div>
+          <div class="port-tag">Mobile App</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GROWTH COMBO
+     ============================================================ -->
+<section class="combo-sec">
+  <div class="sec-inner">
+    <div class="eyebrow reveal">Full Digital Partner</div>
+    <h2 class="sec-title reveal">Build. Launch. Grow.<br>All With One Team.</h2>
+    <p class="sec-desc reveal">Most agencies do one thing. We do everything — and it all works together because we designed it to.</p>
+
+    <div class="combo-grid">
+      <!-- Flow steps -->
+      <div class="combo-flow reveal">
+        <div class="cf-step">
+          <div class="cf-dot" style="background:linear-gradient(135deg,#06B6D4,#2563EB)">📱</div>
+          <div><div class="cf-name">Build Your App or Website</div><div class="cf-d">Custom-built technology that serves your users and supports your business model from day one.</div></div>
+        </div>
+        <div class="cf-step">
+          <div class="cf-dot" style="background:linear-gradient(135deg,#2563EB,#7C3AED)">🚀</div>
+          <div><div class="cf-name">Launch to Market</div><div class="cf-d">App store submission, web deployment, performance monitoring, and early user acquisition.</div></div>
+        </div>
+        <div class="cf-step">
+          <div class="cf-dot" style="background:linear-gradient(135deg,#7C3AED,#EC4899)">🔍</div>
+          <div><div class="cf-name">Drive SEO &amp; Organic Growth</div><div class="cf-d">Technical SEO, content strategy, and authority building that compounds over time.</div></div>
+        </div>
+        <div class="cf-step">
+          <div class="cf-dot" style="background:linear-gradient(135deg,#EC4899,#F59E0B)">📣</div>
+          <div><div class="cf-name">Acquire &amp; Retain Customers</div><div class="cf-d">Paid campaigns, social media, and AI-powered retention systems that keep users coming back.</div></div>
+        </div>
+        <div class="cf-step">
+          <div class="cf-dot" style="background:linear-gradient(135deg,#22C55E,#06B6D4)">📈</div>
+          <div><div class="cf-name">Scale with Data &amp; AI</div><div class="cf-d">Analytics, ML-powered optimization, and automation that make every metric trend upward.</div></div>
+        </div>
+      </div>
+
+      <!-- Stats + Canvas -->
+      <div class="combo-right reveal">
+        <div class="combo-stat"><div class="combo-stat-n">3.4x</div><div class="combo-stat-l">Avg ROI for clients using full-stack services</div></div>
+        <div class="combo-stat"><div class="combo-stat-n">8 wk</div><div class="combo-stat-l">Average time from kickoff to live product</div></div>
+        <div class="combo-stat"><div class="combo-stat-n">+280%</div><div class="combo-stat-l">Avg organic traffic growth in 6 months</div></div>
+        <div class="combo-stat"><div class="combo-stat-n">1 team</div><div class="combo-stat-l">One partner for tech, AI, design, and growth</div></div>
+        <div style="grid-column:1/-1">
+          <canvas id="neural" width="420" height="200" style="width:100%"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="cta-sec">
+  <div class="cta-bg"></div>
+  <div style="position:relative;z-index:2">
+    <div class="cta-sphere">
+      <div class="cta-sphere-in">🚀</div>
+    </div>
+    <div class="eyebrow" style="display:flex;justify-content:center">Let's Build Together</div>
+    <h2 class="cta-title">Ready To Build The Next Generation<br>of Your Digital Business?</h2>
+    <p class="cta-d">Partner with NextGenLeb to create innovative digital solutions that combine technology, AI, and growth strategies — all from one team.</p>
+    <div class="cta-btns">
+      <button class="btn-glow">Discuss Your Digital Idea →</button>
+      <button class="btn-s" style="padding:18px 36px;font-size:15px">Get A Custom Strategy →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="fl">NextGenLeb</div>
+  <div class="footer-links">
+    <a href="#">Services</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Process</a>
+    <a href="#">Contact</a>
+    <a href="#">Privacy</a>
+  </div>
+  <div class="fn">© 2025 NextGenLeb. All rights reserved.</div>
+</footer>
+
+<!-- JavaScript (deferred so DOM is ready) -->
+<script src="main.js" defer></script>
+
+</body>
+</html>
