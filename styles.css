@@ -66,8 +66,13 @@ nav{
    HERO
    ============================================================ */
 .hero{
-  min-height:100vh;display:flex;align-items:center;
-  position:relative;overflow:hidden;padding:130px 60px 80px;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:visible;
+  padding:130px 60px 80px;
+}
 }
 .hero-bg{
   position:absolute;inset:0;
