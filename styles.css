@@ -448,8 +448,10 @@ footer{
 /* ============================================================
    SCROLL REVEAL
    ============================================================ */
-.reveal{opacity:0;transform:translateY(40px);transition:all .85s ease}
-.reveal.v{opacity:1;transform:translateY(0)}
+.reveal{
+  opacity:1;
+  transform:none;
+}
 
 /* ============================================================
    SCROLLBAR
