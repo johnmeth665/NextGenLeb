@@ -75,7 +75,7 @@ nav{
 }
 }
 .hero-bg{
-  position:absolute;inset:0;
+  position:absolute;inset:0;z-index:0;
   background:
     radial-gradient(ellipse 70% 60% at 65% 40%,rgba(37,99,235,.15) 0%,transparent 65%),
     radial-gradient(ellipse 45% 45% at 80% 15%,rgba(124,58,237,.1) 0%,transparent 60%),
@@ -144,7 +144,7 @@ nav{
 /* ============================================================
    HERO VISUAL
    ============================================================ */
-.hero-visual{position:relative;height:560px;display:flex;align-items:center;justify-content:center}
+.hero-visual{position:relative;height:560px;z-index:2;display:flex;align-items:center;justify-content:center}
 .orbit-ring{position:absolute;border:1px solid rgba(255,255,255,.05);border-radius:50%}
 
 .center-orb{
